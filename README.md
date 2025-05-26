@@ -1,9 +1,6 @@
-# Digital Obsidian Garden
-This is the template to be used together with the [Digital Garden Obsidian Plugin](https://github.com/oleeskild/Obsidian-Digital-Garden). 
-See the README in the plugin repo for information on how to set it up.
+# MuJoCo Setup Guide
+This is the repo for the IOAI MuJoCo Setup Guide. The guide is [here](project-stairway.site).
+> Feel free to post issues if you encounter any during your setup. Be sure to leave your environment details so we can help you. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/oleeskild/digitalgarden)
-
----
-## Docs
-Docs are available at [dg-docs.ole.dev](https://dg-docs.ole.dev/)
+# Digital Garden
+This is repo is made from [Digital Garden](https://github.com/oleeskild/Obsidian-Digital-Garden), Obsidian.
