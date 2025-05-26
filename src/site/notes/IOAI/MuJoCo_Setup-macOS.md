@@ -27,26 +27,26 @@ Select a folder of your choice and move **all contents** from the .dmg to that f
 
 Run the following commands in your terminal to install Miniconda:
 ```sh
-mkdir -p ~/miniconda3   
-curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh   
-bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3   
-rm ~/miniconda3/miniconda.sh  
-source ~/miniconda3/bin/activate  
+> mkdir -p ~/miniconda3   
+> curl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh   
+> bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3   
+> rm ~/miniconda3/miniconda.sh  
+> source ~/miniconda3/bin/activate  
 ```
 ## 2.2 Configure Conda Channels
 
 Add the conda-forge channel for reliable package versions (copy and run in terminal):
 ```sh
-conda config --prepend channels conda-forge
+> conda config --prepend channels conda-forge
 ```
 
 ## 2.3 Create and Set Up Virtual Environment
 ```sh
-conda create -n robosuite python=3.10  
-conda init --all  
-conda activate robosuite  
-conda install mujoco  
-python -m pip install mujoco
+> conda create -n robosuite python=3.10  
+> conda init --all  
+> conda activate robosuite  
+> conda install mujoco  
+> python -m pip install mujoco
 ```
 
 > **Note**: You must run `conda activate robosuite` **EVERYTIME** you open a new terminal session.
@@ -70,18 +70,18 @@ Open a terminal inside the robosuite-1.5.1 directory.
 
 1. First, locate your mjpython (only macOS uses this) interpreter:
 ```sh
-which mjpython
+> which mjpython
 ```
 
 2. Copy the output path. Then, set up an alias:
 ```sh
-alias mjpython = "the result of the last command"
+> alias mjpython = "the result of the last command"
 ```
 
 3. Install robosuite dependencies:
 ```sh
-mjpython -m pip install -r requirements.txt
-mjpython -m pip install -r requirements-extra.txt
+> mjpython -m pip install -r requirements.txt
+> mjpython -m pip install -r requirements-extra.txt
 ```
 
 > **Note**: You must run `alias mjpython = "the result of the last command"` **EVERYTIME** you open a new terminal session.
@@ -93,8 +93,8 @@ mjpython -m pip install -r requirements-extra.txt
 
 To verify the setup, navigate to your <u>working directory</u> and run a demo:
 ```sh
-cd robosuite-1.5.1
-mjpython robosuite/demos/demo_device_control.py --device keyboard
+> cd robosuite-1.5.1
+> mjpython robosuite/demos/demo_device_control.py --device keyboard
 ```
 > **NOTE**: You may need to give Terminal full keyboard access.
 

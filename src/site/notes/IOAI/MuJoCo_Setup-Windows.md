@@ -28,7 +28,7 @@ Download the Miniconda Installer: [Miniconda3-Latest-Windows](https://repo.anaco
 6. Run the following commands in this window to initialise conda environment. You should be able to see a list files (path) that have been updated by conda.
 
 ```shell
-conda init
+> conda init
 ```
 
 7. Verify your conda environment by opening a Windows Powershell type `conda`. If your environment is good, you should see conda usage options displayed like below.  
@@ -38,19 +38,19 @@ conda init
 
 Add the conda-forge channel for reliable package versions (copy and run in Windows Powershell):
 ```sh
-conda config --prepend channels conda-forge
+> conda config --prepend channels conda-forge
 ```
 
 ## 1.3 Create and Set Up Virtual Environment
 
 1. Set up new conda environment and install Mujoco(copy and run in Windows Powershell):
 ```sh
-conda create -n robosuite python=3.10  
-conda init --all  
-conda activate robosuite  
-conda install mujoco  
-python -m pip uninstall mujoco
-python -m pip install mujoco
+> conda create -n robosuite python=3.10  
+> conda init --all  
+> conda activate robosuite  
+> conda install mujoco  
+> python -m pip uninstall mujoco
+> python -m pip install mujoco
 ```
 > **Note**: You must run `conda activate robosuite` **EVERYTIME** you open a new terminal session.
 > To avoid repeating this, add `conda activate robosuite` to your shell configuration file (e.g., ~/.bashrc or ~/.zshrc).
@@ -108,8 +108,8 @@ Install with the following options.
 2. Open a PowerShell inside the your `Robosuite` folder directory OR run `cd Path-To-Your-Working-Director\Robosuite`. Install robosuite dependencies:
 
 ```sh
-python -m pip install -r requirements.txt
-python -m pip install -r requirements-extra.txt
+> python -m pip install -r requirements.txt
+> python -m pip install -r requirements-extra.txt
 ```
 
 <div style="page-break-after: always;"></div>
@@ -118,8 +118,8 @@ python -m pip install -r requirements-extra.txt
 
 To verify the setup, navigate to your <u>working directory</u> and run a demo:
 ```sh
-cd Path-To-Your-Working-Director\Robosuite
-python robosuite/demos/demo_device_control.py --device keyboard
+> cd Path-To-Your-Working-Director\Robosuite
+> python robosuite/demos/demo_device_control.py --device keyboard
 ```
 
 **Congratulations!** Your environment is now successfully configured.
